@@ -29,7 +29,7 @@ app.get("/api/whoami", function (req, res) {
   res.json({
     ipaddress: req.ip,
     language: req.get("Accept-language"),
-    userAgent: req.get("User-Agent"),
+    software: req.get("User-Agent"),
   });
 });
 
